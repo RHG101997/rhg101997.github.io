@@ -1,41 +1,64 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Richard Hernandez Portafolio</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css">
+    <!-- JQuary -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="css/materialize.css">
+   
 </head>
 <body>
- 
-    <!-- Navbar -->
-    <header>
-        <nav class="nav-warpper transparent">
-            <div class="container ">
-                <a href="#" class="brand-logo">Richard Hernandez</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                    <i class="material-icons" >menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="" href="#">About</a></li>
-                    <li><a class="" href="#">Projects</a></li>
-                    <li><a class="" href="#">Contact Me</a></li>
-                </ul>
-                <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a class="" href="#">About</a></li>
-                    <li><a class="" href="#">Projects</a></li>
-                    <li><a class="" href="#">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class=" bg container center-align main_conatiner">
 
+        <!-- Introduction -->
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="  white lighten-5 ">
+            <div class="row valign-wrapper">
+                <div class="col s5">
+                <img src="img/profile_sq.jpg" alt="" class="z-depth-1 circle responsive-img"> 
+                </div>
+                <div class="col s7">
+                <span class=" black-text">
+                        <ul class="">
+                            <li class=""><h3>Richard Hernandez</h3></li>
+                            <li class="">Studying Computer Engineering in Florida International University</li>
+                            <li class=""><img src="img/fiu.jpg" class="fiu responsive-img" ></li>
+                            
+                        </ul> 
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+            <div class="col 12s">
+                <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>About</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">place</i>Projects</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Extra</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                    </ul>
+            </div>
+    </div>
+  
     <!-- Scripts -->
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/index.js"></script>
 </body>

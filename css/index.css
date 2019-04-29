@@ -1,13 +1,11 @@
-header{
-    background:url(../img/cover2.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 1000px;
+img.fiu{
+    width: 50%;
+    height: 50%;
 }
-@media screen and (max-width: 670px){
-    header{
-        min-height: 500px;
-    }
-        
-    
+
+.bg{
+    background-image: url("img/bg.jpg");
+}
+div.main_conatiner{
+    padding-top: 4%
 }

@@ -1,4 +1,4 @@
 git add --all
-git commit -m "Comments"
+git commit -m "Second"
 git push -u origin master
 pause
