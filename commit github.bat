@@ -1,4 +1,9 @@
 git add --all
-git commit -m "Second"
+
+@echo off
+cls 
+set /p msg="Enter message: "
+
+git commit -m "%msg%"
 git push -u origin master
 pause
