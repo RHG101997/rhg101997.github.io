@@ -1,10 +1,9 @@
 <!DOCTYPE html><html lang="en">
 <head><meta charset="UTF-8">
-<title>Password Generator (Extra Strong version) | SS64.com</title>
+<title>Password Generator</title>
 <meta name="Author" content="Richard Hernandez">
 <!-- June 2020 removed master/slave language -->
 <meta name="viewport" content="width=390, initial-scale=1">
-<link rel="STYLESHEET" href="../main.css" type="text/css">
 <style>
 p, h1, li, label, .masterbox {font-family: Helvetica, Arial, Verdana, Geneva, sans-serif; font-weight: normal; font-size: 100%;}
 h1{clear: both; font-size: 1.375em;}
@@ -27,7 +26,7 @@ position: relative; left: 15px; width: 166px; margin-bottom: 1.5px;
 font-family: Menlo, "Bitstream Vera Sans", "Courier New", courier, monospace;
 }
 #custid{font-family: Menlo, "Bitstream Vera Sans", "Courier New", courier, monospace;}
-.tagline {font-size: 12px;}
+.tagline {font-size: 20%;}
 .genbtn {font-size: 16px; margin-left: 10px; width: 120px;}
 #showlbl{clear:both;text-align: left;float:none;width: 200px; display:inline;}
 a:link{color: #00F; text-decoration: none;}
@@ -49,6 +48,11 @@ a:active{color: #00F;}
   border: 2px solid rgba(47,129,238,1);
   outline: 1px;
 }
+
+.credits{
+  font-size: 20%;
+}
+
 </style>
 <script>
 
@@ -326,7 +330,10 @@ window.onbeforeunload = function () {
 }
 // ]]>
 </script>
-<meta name="viewport" content="width=768, initial-scale=1">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body onload="document.m.reset();document.ot.reset();document.m.main.focus();"> 
 
@@ -334,20 +341,20 @@ window.onbeforeunload = function () {
 
 <h1>SS64 Password Generator</h1>
 <form name="m" id="m">
-<div id="mp">
-<p>Main password<br>
-<input name="main" id="main" class="masterbox" value="" autocomplete="new-password" autocapitalize="none" onblur="setvals();" onkeyup="copyTo(this, &#39;maintext&#39;);" type="password" autofocus tabindex="1">
-<input name="maintext" id="maintext" class="masterbox" value="" autocomplete="off" autocapitalize="none" onblur="setvals();" onkeyup="copyTo(this, &#39;main&#39;);" style="display: none;" tabindex="2">
-<input value="Generate" class="genbtn" onclick="setvals();" type="button">
-<input name="reveal" onclick="revealPassword(this.checked);" type="checkbox" id="show"> <label id="showlbl" for="show">show password</label></p></div>
+  <div id="mp">
+  <p>Main password<br>
+  <input name="main" id="main" class="masterbox" value="" autocomplete="new-password" autocapitalize="none" onblur="setvals();" onkeyup="copyTo(this, &#39;maintext&#39;);" type="password" autofocus tabindex="1">
+  <input name="maintext" id="maintext" class="masterbox" value="" autocomplete="off" autocapitalize="none" onblur="setvals();" onkeyup="copyTo(this, &#39;main&#39;);" style="display: none;" tabindex="2">
+  <input value="Generate" class="genbtn" onclick="setvals();" type="button">
+  <input name="reveal" onclick="revealPassword(this.checked);" type="checkbox" id="show"> <label id="showlbl" for="show">show password</label></p></div>
 </form>
 <form method="post" class="websites">
 <script>
-for (var i = 0; i < sites.length; i++) {
-  document.write("<label><a href=\"" + sites[i].url + "\">" + sites[i].displayName + "</a></label>");
-  document.writeln(" <input name=\"site\" class=\"sitebox\" value=\"" + sites[i].seed + "\" readonly=\"\">");
-  document.writeln("<input name=\"password\" id=\"" + sites[i].seed + "\" class=\"pass\" readonly=\"\" onclick=\"highlight(this);\" tabindex=\"6\" value=\"\"><br>");
-}
+  for (var i = 0; i < sites.length; i++) {
+    document.write("<label><a href=\"" + sites[i].url + "\">" + sites[i].displayName + "</a></label>");
+    document.writeln(" <input name=\"site\" class=\"sitebox\" value=\"" + sites[i].seed + "\" readonly=\"\">");
+    document.writeln("<input name=\"password\" id=\"" + sites[i].seed + "\" class=\"pass\" readonly=\"\" onclick=\"highlight(this);\" tabindex=\"6\" value=\"\"><br>");
+  }
 </script>
 
 
@@ -363,8 +370,13 @@ for (var i = 0; i < sites.length; i++) {
 <input type="button" class="genbtn" value="Clear All" onclick="window.location.href=window.location.href">
 </form><br>
 
-<p>Credits:</p>
-<p class="tagline">JavaScript implementation of the Secure <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Hash Algorithm</a>, (SHA-256, ©Paul Johnston, distributed under the <a href="https://en.wikipedia.org/wiki/BSD_License">BSD License</a>.) Inspired by <a href="http://angel.net/~nic/passwd.sha1.1a.html">Nic Wolff’s password generator</a> Mobile version by <a href="http://jayvanhutten.com/pass/">Jay van hutten</a> </p>
-<p class="tagline"><a href="https://ss64.com/">Simon Sheppard</a>, June 2020</p>
-<p class="tagline">SS64.com/pass/ </p>
-</body></html>
+
+
+<div id="credits">
+  <p>Credits:</p>
+  <p class="tagline">JavaScript implementation of the Secure <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Hash Algorithm</a>, (SHA-256, ©Paul Johnston, distributed under the <a href="https://en.wikipedia.org/wiki/BSD_License">BSD License</a>.) Inspired by <a href="http://angel.net/~nic/passwd.sha1.1a.html">Nic Wolff’s password generator</a> Mobile version by <a href="http://jayvanhutten.com/pass/">Jay van hutten</a> </p>
+  <p class="tagline"><a href="https://ss64.com/">Simon Sheppard</a>, June 2020</p>
+  <p class="tagline">SS64.com/pass/ </p>
+  </body></html>
+</div>
+
