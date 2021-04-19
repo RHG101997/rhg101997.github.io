@@ -2,8 +2,8 @@
 title: Writing a New Post
 author: Cotes Chung
 date: 2019-08-08 14:10:00 +0800
-categories: [Tutorial]
-tags: [writing]
+categories: [Cheatsheet]
+tags: [writing post, posts, text, styles, images, format]
 ---
 
 ## Naming and Path
