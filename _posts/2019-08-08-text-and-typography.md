@@ -2,7 +2,7 @@
 title: Text and Typography
 author: Cotes Chung
 date: 2019-08-08 11:33:00 +0800 
-categories: [Cheatsheet]
+categories: [Cheatsheets]
 tags: [typography, images, styles, posts]
 math: true
 mermaid: true
