@@ -9,6 +9,9 @@ tags: [python, cheatsheet, plot, numpy, audio, pygame, progressbar, scraping, pa
 
 **Libraries:**  **[`Progress_Bar`](#progress-bar)**__,__ **[`Plot`](#plot)**__,__ **[`Table`](#table)**__,__ **[`Curses`](#curses)**__,__ **[`Logging`](#logging)**__,__ **[`Scraping`](#scraping)**__,__ **[`Web`](#web)**__,__ **[`Profile`](#profiling)**__,__  **[`NumPy`](#numpy)**__,__ **[`Image`](#image)**__,__ **[`Audio`](#audio)**__,__ **[`Games`](#pygame)**__,__ **[`Data`](#pandas)**__.__
 
+>This post is modified to fit my needs. **The original source is in the following [link](https://github.com/gto76/python-cheatsheet)**
+
+
 Libraries
 =========
 
