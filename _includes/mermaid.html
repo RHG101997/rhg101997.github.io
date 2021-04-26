@@ -21,7 +21,7 @@
     $("pre").has("code.language-mermaid").each(function() {
       let svgCode = $(this).children().html();
       $(this).addClass("unloaded");
-      $(this).after(`<div class=\"mermaid\">${svgCode}</div><div><a href=\"javascript: updateMermaid()\">R-render Diagram</a></div>`);
+      $(this).after(`<div class=\"mermaid\">${svgCode}</div><div><a href=\"javascript: updateMermaid()\">Re-render Diagram</a></div>`);
     });
 
     mermaid.initialize(mermaidConf);
