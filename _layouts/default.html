@@ -46,7 +46,10 @@ layout: compress
     </a>
 
     {% include search-loader.html %}
-
-  </body>
+    {% if page.mermaid %}
+    <!-- reload mermaid -->
+        <div onload="myFunction()"></div>
+    {% endif %}
+</body>
 
 </html>
