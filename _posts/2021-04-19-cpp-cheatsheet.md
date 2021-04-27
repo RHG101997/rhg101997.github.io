@@ -6,6 +6,8 @@ categories: [Cheatsheets, C++]
 tags: [c++,c, cheatsheet, declarations, statements, functions]
 ---
 
+
+
 This cheatsheet is not created by me for original author follow this link:
  
 - The document is hosted on [Here](https://github.com/mortennobel/cpp-cheatsheet).
