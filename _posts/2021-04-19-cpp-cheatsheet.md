@@ -4,13 +4,42 @@ author: Richard Hernandez
 date: 2021-04-19 12:00:00 +0800 
 categories: [Cheatsheets, C++]
 tags: [c++,c, cheatsheet, declarations, statements, functions]
+toc: false
 ---
-
-
 
 This cheatsheet is not created by me for original author follow this link:
  
 - The document is hosted on [Here](https://github.com/mortennobel/cpp-cheatsheet).
+
+- [Preprocessor](#preprocessor)
+- [Literals](#literals)
+- [Declarations](#declarations)
+- [STORAGE Classes](#storage-classes)
+- [Statements](#statements)
+- [Functions](#functions)
+- [Expressions](#expressions)
+- [Classes](#classes)
+- [Templates](#templates)
+- [Namespaces](#namespaces)
+- [`memory` (dynamic memory management)](#-memory---dynamic-memory-management-)
+- [`math.h`, `cmath` (floating point math)](#-mathh----cmath---floating-point-math-)
+- [`assert.h`, `cassert` (Debugging Aid)](#-asserth----cassert---debugging-aid-)
+- [`iostream.h`, `iostream` (Replaces `stdio.h`)](#-iostreamh----iostream---replaces--stdioh--)
+- [`fstream.h`, `fstream` (File I/O works like `cin`, `cout` as above)](#-fstreamh----fstream---file-i-o-works-like--cin----cout--as-above-)
+- [`string` (Variable sized character array)](#-string---variable-sized-character-array-)
+- [`vector` (Variable sized array/stack with built in memory allocation)](#-vector---variable-sized-array-stack-with-built-in-memory-allocation-)
+- [`deque` (Array stack queue)](#-deque---array-stack-queue-)
+- [`utility` (pair)](#-utility---pair-)
+- [`map` (associative array - usually implemented as binary search trees - avg. time complexity: O(log n))](#-map---associative-array---usually-implemented-as-binary-search-trees---avg-time-complexity--o-log-n--)
+- [`unordered_map` (associative array - usually implemented as hash table - avg. time complexity: O(1))](#-unordered-map---associative-array---usually-implemented-as-hash-table---avg-time-complexity--o-1--)
+- [`set` (store unique elements - usually implemented as binary search trees - avg. time complexity: O(log n))](#-set---store-unique-elements---usually-implemented-as-binary-search-trees---avg-time-complexity--o-log-n--)
+- [`unordered_set` (store unique elements - usually implemented as a hash set - avg. time complexity: O(1))](#-unordered-set---store-unique-elements---usually-implemented-as-a-hash-set---avg-time-complexity--o-1--)
+- [`algorithm` (A collection of 60 algorithms on sequences with iterators)](#-algorithm---a-collection-of-60-algorithms-on-sequences-with-iterators-)
+- [`chrono` (Time related library)](#-chrono---time-related-library-)
+- [`thread` (Multi-threading library)](#-thread---multi-threading-library-)
+- [`future` (thread support library)](#-future---thread-support-library-)
+
+
 
 ## Preprocessor
 
