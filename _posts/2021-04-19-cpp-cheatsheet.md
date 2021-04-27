@@ -40,7 +40,6 @@ This cheatsheet is not created by me for original author follow this link:
 - [`future` (thread support library)](#-future---thread-support-library-)
 
 
-
 ## Preprocessor
 
 ```cpp
