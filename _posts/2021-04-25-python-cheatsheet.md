@@ -2,7 +2,7 @@
 title: Python Cheatsheet
 author: Richard Hernandez
 date: 2021-04-25 12:00:00 +0800 
-categories: [Cheatsheets]
+categories: [Cheatsheets, Python]
 tags: [python, cheatsheet, declarations, statements, functions, types, syntax, data]
 ---
 
