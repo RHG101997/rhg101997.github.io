@@ -7,6 +7,7 @@ tags: [terrain, generator, p5, js, perlin, noise]
 ---
 
 > **Toggle Rotate/Move**: this button will allow you to move using the arrow keys.
+> **Toggle Boxes**: This will show the boxes that make up the terrain.
 
 {% include terraingen.html %}
 
@@ -20,7 +21,7 @@ This project uses perlin noise to generate the height of the cubes and apply col
 
 ```javascript
 
-//Scale
+//Terrain size(Toggle Boxes will show this values)
 let tileSize = 15; // each tile is an box
 let mapSize = 20; // how many boxes 20x20 square
 
