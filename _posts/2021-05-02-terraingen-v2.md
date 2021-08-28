@@ -2,7 +2,7 @@
 title: Terrain Generator using Perlin Noise
 author: Richard Hernandez
 date: 2021-05-02 11:32:00 +0800 
-categories: [Projects, P5 Terrain Generator]
+categories: [Projects, P5]
 tags: [terrain, generator, p5, js, perlin, noise]
 ---
 
