@@ -2,7 +2,7 @@
 title: Java Cheatsheets
 author: Richard Hernandez
 date: 2021-05-02 11:32:00 +0800 
-categories: [Cheatsheets, Java]
+categories: [Notes, Java]
 tags: [java, OOP, polymorphism, cheatsheet,inheritance, proggramming, loops, operators, basics]
 ---
 

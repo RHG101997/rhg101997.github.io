@@ -2,7 +2,7 @@
 title: Bash Common Commands
 author: Richard Hernandez
 date: 2021-04-19 12:00:00 +0800 
-categories: [Cheatsheets, Bash]
+categories: [Notes, Bash]
 tags: [bash, cheatsheet, files bash, ssh, enviroment variable, permissions, folders]
 ---
 

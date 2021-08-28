@@ -2,7 +2,7 @@
 title: C++ Cheatsheet
 author: Richard Hernandez
 date: 2021-04-19 12:00:00 +0800 
-categories: [Cheatsheets, C++]
+categories: [Notes, C++]
 tags: [c++,c, cheatsheet, declarations, statements, functions]
 toc: false
 ---

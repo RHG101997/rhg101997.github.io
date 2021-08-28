@@ -2,7 +2,7 @@
 title: Writing a New Post
 author: Cotes Chung
 date: 2019-08-08 14:10:00 +0800
-categories: [Cheatsheets, Website]
+categories: [Notes, Website]
 tags: [writing post, posts, text, styles, images, format]
 ---
 
