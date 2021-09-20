@@ -13,6 +13,10 @@ Using GCR from gcloud for private images
 
 ```bash
 
+##############################################################################
+# DOCKER using GCR
+##############################################################################
+
 gcloud auth configure-docker                                              # Allow for gcloud credentials to be added to docker
 docker build -t gcr.io/<project-id>/name:tag .                            # Build the image that can be sent to gcr
 docker tag <name-of-image> gcr.io/<project-id>/name                       # Re-tags an already build image to send it to gcr
