@@ -51,25 +51,20 @@ My Cool Side Project
 
 
 Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+:   **C++:** First language I learned to use in high school, it was called to my attention due to the desire of creating games. Later on I found it to be almost every where in computer science and in engineering.
 
-:   **second-lang:** Description of your experience with second-lang,
+:   **Python:** Most of my classes at university some how reference this language and it is really good for creating prototypes and make fast servers or networking. I created a list with most of my scripts used from gaming to file manipulation found here in [py_scripts].
+
+:   **Java:** Description of your experience with second-lang,
     perhaps again including a [link] [ref], this time placing the url
     reference elsewhere in the document to reduce clutter (see source
-    file). 
+    file).
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+:   Basic knowledge of **C**, **golang**, others.
 
 [ref]: https://github.com/githubuser/superlongprojectname
+[py_scripts]: https://github.com/RHG101997/py_scripts
 
 Extra Section
 ----------------------------------------
