@@ -4,12 +4,15 @@ icon: fas fa-info
 order: 5
 ---
 
-
-Richard Hernandez
-=================
+Me
+---
+My name is: **Richard Hernandez**
+Github: [https://github.com/RHG101997/](https://github.com/RHG101997/)
 
 Education
 ---------
+
+---
 
 2021-2024 (expected)
 :   **PhD, Computer Engineering**; Florida International University(FIU)
@@ -24,7 +27,9 @@ Education
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+---
+
+**My Most Recent Work Experience:**
 
 **(2021 - current)** I am a Research Assistant at Florida International University working in serveral topics for the Advanced Wireless and Security Lab (ADWISE):
 
@@ -35,12 +40,14 @@ Experience
 * Several other Communication technologies are been used as part of research, and linux systems.
 
 
-**That Other Job You Had**
+**That Other Jobs**
 
 * **(2018-2020)** Retail for 2 years at EXPRESS STORE
 
 Technical Experience
 --------------------
+
+---
 
 My Cool Side Project
 :   Her are some projects I have worked on in my spare time, and other resources.
@@ -48,6 +55,7 @@ My Cool Side Project
     * [Nim_Game_Java](https://github.com/RHG101997/Nim_Game_Java) for better review here is a video about it (here)[https://youtu.be/EwzbEp6SbEM]
     * cLog: Command line coloring using python. [video](https://www.youtube.com/watch?v=_gx3Dt7MoK0&ab_channel=RichardHernandez)
     * Tile based Terrain using P5.js for rendering. The porject is aviable in this website, or here is a [video](https://youtu.be/l4nAdEntGf8) about the not updated version. [Code Here](https://editor.p5js.org/RHG101997/sketches/6IdZG40H0)
+    * SynthesisOfSinusoidalSignals: It is a project for creating sound in matlab using frequencies. I did a small paper about found in [Here](https://github.com/RHG101997/SynthesisOfSinusoidalSignals).
 
 
 Programming Languages
@@ -55,11 +63,7 @@ Programming Languages
 
 :   **Python:** Most of my classes at university some how reference this language and it is really good for creating prototypes and make fast servers or networking. I created a list with most of my scripts used from gaming to file manipulation found here in [py_scripts].
 
-:   **Java:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file).
-
+:   **Java:** This language was used my some of my algorithm classes in University, and most of the advance concepts in OOP I learned using Java.
 
 :   Basic knowledge of **C**, **golang**, others.
 
@@ -68,6 +72,8 @@ Programming Languages
 
 Extra Section
 ----------------------------------------
+
+---
 
 * Human Languages:
 
