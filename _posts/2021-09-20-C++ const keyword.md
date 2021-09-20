@@ -1,16 +1,16 @@
 ---
-title: C++ Streams
+title: C++ Const Keyword
 author: Richard Hernandez
 date: 2021-08-08 14:10:00 +0800
 categories: [C++, C++ const]
-tags: [C++, Advance, Proggramming, streams]
+tags: [C++, Advance, Proggramming, const, const functions, functions, methods]
 ---
 
 
-## The `const` Keyword: 
-
 
 ## `const` with functions
+
+Reference: [Video](https://www.youtube.com/watch?v=RC7uE_wl1Uc&ab_channel=BoQian)
 
 Using const in methods examples, and can be used for more efficiency.
 
