@@ -8,6 +8,19 @@ tags: [docker,cheatsheet, containers, vm, ubuntu, linux, compose]
 
 >This post is modified to fit my needs. **The original source is in the following [link](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh)**
 
+
+Using GCR from gcloud for private images
+
+```bash
+
+gcloud auth configure-docker                                              # Allow for gcloud credentials to be added to docker
+docker build -t gcr.io/<project-id>/name:tag .                            # Build the image that can be sent to gcr
+docker tag <name-of-image> gcr.io/<project-id>/name                       # Re-tags an already build image to send it to gcr
+docker push gcr.io/<project-id>/name:tag                                  # Pushing to the registry
+
+```
+
+
 ```bash
 
 ##############################################################################
@@ -102,3 +115,4 @@ docker-machine scp docker-compose.yml myvm1:~                             # Copy
 docker-machine ssh myvm1 "docker stack deploy -c <file> <app>"            # Deploy an app
 
 ```
+
