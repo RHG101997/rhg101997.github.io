@@ -322,3 +322,239 @@ modified version of **Snort**, enhancing it and providing functionality similar 
 3. Sdrop: rejected but no logged
 
 
+
+## Chapter 6 - Malicious Sofware
+
+* Malware: A program intent of compromising confifentiallity, intergrity  or availability.
+* Adavance Persistent Threat: cybercrime targeted to bussines or political targets.
+* Adware: ads that integrated into sofware
+* AttackKit: tools for generating malware. (Zeus crimeware, Angler)
+* Auto-rooter: Break into new machines remotely
+* Backdoor: access to unauthorized system bypasssing security(Maintenance Hook)
+* Drive-by-Download: code that eploit browser vulnerability to attack
+* Exploits: code specific for single or multiple vulnerabilities.
+* Flooders: generate large volume of data, DoS
+* Keyloggers: record credentials, keystrokes
+* Logic Bombs: Stays dormant until triggerd by event or condition.
+* Macro virus: scripting code attached to documents, can replicate
+* Mobile Code: 
+* Root kit: tools after attacke is in system.
+* Spammer programs: large volume of email
+* Spyware: collecs information from several sources
+* Trojan Horse: Appears useful but execute payload in back
+* Virus: When executed replicates it self to other executables
+* Worm: runs independent, can propagate a complete version to other host.
+* Zombie,bot: activate when lunching an attack on other machines.
+
+#### Malware Classification Categories
+
+1. How it propagates
+2. Actions and Payload
+3. Aditionally
+* Need a host program
+* Indpendent, self-contained
+* Don't replicate
+
+**Propagation Mechanism**:
+
+1. Infection of existent content
+2. Exploit sofware vulnerabilities(worms)
+3. Social Engineering attacks.
+
+**Payload actions once in target**
+
+1. Corruption
+2. Theft service/make system zombie
+3. Theft of data (keylogger) 
+4. Stealthing/hiding
+
+#### Attack Sources
+
+1. Politically motivated
+2. Criminals
+3. Organized Crime
+4. Organization(selling services)
+5. National Goverment Agencies
+
+#### APTs Characteristics:
+
+* Well resouced
+* State sponsored
+* Advance: dev custom malware
+* Persisten: maximize order of success
+* Threats: increase level of thread
+* Aim: theft, intelectual properties, security,physical disruption
+* Techniques used: social enginerring, spear-pishing, drive-by-download, etc
+* Intent: to infect
+
+#### Virus Characteristics
+
+* Modifies and includes a copy of the virus
+* Replicate into other content
+* Easly spread through networks
+
+Phases of Virus:
+
+1. Dormat: is idle
+2. Triggering: condition or event 
+3. Propagation: copy of itself, replicates
+4. Execution: Payload or action
+
+Macro virus: they attack to documents or other media files:
+
+* Plataform independent
+* Easly spread, in traditional file systems
+* easier to write or modify.
+
+#### Virus Classification:
+
+* **By target:** 
+1. Boot sector infector
+2. File infector
+3. Micro virus
+4. Multipartite virus: multiple way infecting
+
+* **By concealment**
+1. Encrypted
+2. Stealth
+3. Polymorphic: mutates apparence
+4. Metamorphic: mutates and rewrite himself.  apparence, and behavior
+
+#### Worms 
+
+**Worm Replication:**
+
+* Mail, instant msg
+* File sharing
+* Remote execution: execute himself in other system
+* Remote file access or transfer capability
+* Remote login capability
+
+**Worm Target Discovery**
+
+* Scanning (Fingerprint): search system
+* Random: Probes random IP
+* Hit List: list of potential targets
+* Topological: based on information on host
+* Local subnet: own local network
+
+> Morris Worm: 1988 UNIX systems. Exploit UNIX finger protocol, sending emails. First worm
+
+> WannaCry: Ransomware,  scan networks local and random to jump other systems. Encrypts files and ask for ransom to decrypt. UK researcher activated a kill switch. 
+
+**State of art Worm tech**
+
+* Multiplataform
+* Multi-exploit
+* Ultrafast-spreading
+* Polymorphic: evade detection
+* Transport vheicales
+* Zero-day Attack: vulnerability not jet discovered
+
+#### Mobile Code
+
+Included when running cross-site scripting, interactive and dynamic websites, download from untrusted sofware. Target smartphones, delte data. Also CommWarrior replicates using Bluetooth.
+
+#### Drive by Download
+
+* Exploits browser vulnerabilities and plugins
+* Doesn't actively propagates as regular worms
+* Spreads when visiting websites
+
+**Watering Hole Attacks**:
+* Highly targeted
+* has information on websites victim visit
+* Then wait for them to visit
+* Infect, and takes no action other visitor
+
+#### Malvertising
+
+* Placing malware without comprimising website.
+* targeted websites
+* Dynamically generated reduce detection
+* Stay for as little as few hours
+
+#### Clickjacking
+
+* Lead user to belive they are typing in real UI(redress attack) but there is invisible interface stealing the data.
+* Colecting users clicks
+* Adjust browser setting 
+* Place button under legit button
+* routing clicks to another site.
+
+#### Social Engineering
+
+* Spam 
+* Trojan Horse
+* Mobile phone trojans
+
+#### Payload System Corruption
+
+1. Chernobyl virus: over write first megabyte with zeros.
+2. Klez: Mass maling, can stop, delte antivirus programs, casue files to become empty
+3. Ransomware: Encrypts data and ask for ransom. 
+
+
+#### System Curruption
+
+1. Real-world Damage: cause physical, like changing BIOS like Chernobyl or Stuxnet target industrial
+2. Logic Bomb: embedded code in malware
+
+#### Information Theft
+
+1. Keylogger
+2. Spyware
+
+#### Phising 
+1. Mascarading as trusted source
+2. Spear-phising: targeted
+
+#### Stealthing Rookit
+
+* gives root access to attacker
+* Persistent: every time it boots
+* Memory based: cant survive reboot
+* User mode: intercept API calls, returns modified results
+* Kernel Mode: Intercept native API, removel itself from kernel list
+* VM: install it self in VM
+* External Mode: direct access to hardware, BIOS, etc
+
+#### Malware Counter Measure
+
+Prevention
+
+* Policy
+* Awareness 
+* vulnerability mitigation
+* Threat mitigation
+
+Mitigation:
+
+* Detection
+* identification
+* Removal
+
+#### Anti-virus Generation 
+
+1. Simple Scanner
+2. Heuristic Scanners
+3. Activity Traps(identify by action)
+4. Full-featured
+
+#### Sanbox Analysis
+
+Run malware isolated to analyse the beahavior and to better detect in furute
+
+#### Host-based behavior-blocking Software
+
+It blocks potentially malicious actions before  they have a chance to happen
+
+#### Perimeter Scanning Approuches
+
+* Anti-virus
+* traffic analysis
+* ingress and egress monitoring(wierd behaviors)
+
+
+
+## 
