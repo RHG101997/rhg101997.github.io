@@ -557,4 +557,124 @@ It blocks potentially malicious actions before  they have a chance to happen
 
 
 
-## 
+## Chapter 10 - Buffer Overflow
+
+Can occur in Stack, Heap, Data Section of proccess.
+
+**Consequences**:
+
+* Corruption
+* Transfer control
+* Memory Access violation
+* Execution unknown code
+
+#### Attacks 
+
+1. Identify vulnerability
+2. How is the buffer been stored
+
+**Fuzzing tool** for identification of vulnerable problems
+
+#### Stack Smashing
+
+* Morris Worm exploits this vulnerability, vulnerable code like gets() fro C language. 
+* Uses return address to execute shellcode
+
+#### Shellcode
+
+* Normally used to trasnfer control of the CLI to the attacker with high privilages.
+* Required good assambly skills
+* Metasploit helps create shell code.
+
+#### Stack Overflow Variants
+
+* Targeted: system utility, Program library code(if not static linked), Network Deamon
+* Shellcode Functionality: flush firewall, listening services, remote shell, privilage escalation, backdoor
+
+#### Buffer Overflow Defenses
+
+1. **Compile-Time:** Harden new programs
+ * Use modern language: notion of type, not vulnerable BO, higher cost resources, limit usefullness, example creating drivers
+ * Safe Coding Techniques: inspect code, rewrite unsafe code, audited existing code base. 
+ * Language Exntension/Safe Libraries: Handeling memory allocation, safer varients of functions
+ * Stack protection: GCC compiler extension(add dummy functions),check for corruption of stack
+2. **Run-Time**: detect and abort attacks, in exsisting programs
+ * Executable Address Space Protection: memory non executable
+ * Address Space Randomization
+ * Guard Page: Flagg MMU as illigal address, any attemp access abort
+
+
+#### Attack: Replacement Stack Frame:
+
+Replace stack frame with a dummy stack frame.
+> Defense: randomization address, stack protection, non executable stack
+
+
+#### Return System Call 
+
+* Use retunr addres to execute shellcode
+> Defense: randomization address, stack protection, non executable stack
+
+#### Heap Overflow
+
+* Located in the Heap, dynamic data structures
+* No return address
+* No easy to transafer control
+
+> Defense: Making heap non executable, Randomize address allocation
+
+#### Global Data Overflow
+
+* Attack buffer global data
+* Vulnerable adjesent proccess
+* Overwrite function pointer to later call
+
+> defense: Non executable, move function pointers, guard pages
+
+
+
+## Chapter 11 - Sofware Security
+
+#### Security flaws
+
+5 Security sofware flaws:
+
+1. Unvalidated Input
+2. Cross-Site Scripting
+3. Buffer overflow
+4. Injection Flaws
+5. Improper error handling
+
+NIST Reccommendation:
+
+1. Stop vulnerabilities before they occur
+2. Find vulnerabilities before they can be exploited
+3. Reduce impact of vulnerabilities by resilient architectures
+
+#### Sofware Security, Quality and Reliability:
+
+1. Quality and Reliability: focus eliminate as many bugs possible. concern is not how many bugs but how often they are triggered.
+2. Security : Probability distribution for targeting bugs that result in failure and can be exploited. Triger by input that differ dramatically from what is usually expected.
+
+#### Defensive Programming
+
+Never assume anything, check all assumptions and handle any possible error states.
+
+#### Handling Program Inputs
+
+* Common
+* Input is any source data from outside.
+* Identify all data sources
+* validate size and type
+
+#### Interpretation of program Input
+
+* binary or text, binary depends on encoding
+* Check are character types with care
+* Fail to validate result in vurnerability
+
+**Injection attacks** is by handeling input wrong way, attacker execute code.(scripting languages more often)
+
+#### Cross Site Attack Sctipting (XXS) 
+
+
