@@ -736,7 +736,51 @@ ASD = Australian Signals Directorate
 4. Appropiate Network protection mechanism
 5. Appropiate proccess are used to maintain security
 
-#### System Security Planning Proccess
+#### OS Hardening
+
+1. Intall, and Patch OS
+2. Configure OS
+3. Additional Security Controls
+4. Test the Security
+
+#### Data Backup and Archive
+
+* Backup: making copy of data regularly
+* Archive: retaining copies for periods of time
+(online, offline, local, remote)
+
+#### Windows Security 
+
+* Biba Integrity Model
+* UAC User Account control
+* Registry for configurations
+* AES using BitLocker encryption file system
+* EFS Encryption File System
+
+#### Virtualization
+
+* abstraction of resources  used by sofware in simulated enviroment
+
+#### Hypervisor
+
+* Resource broker
+* schedule VMs
+* Virtual memory managemnt
+* Context switching
+* emulate networks
+
+#### Securing Virtualization
+
+* Plan, secure all elements
+* Hypervisor properly secure
+* Restric administrator access to VM
+
+#### Hypervisor Security
+
+* SImilar to OS, configure firewall IDS, seperated networks
+
+
+
 
 
 
