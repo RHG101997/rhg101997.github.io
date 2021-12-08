@@ -677,4 +677,43 @@ Never assume anything, check all assumptions and handle any possible error state
 
 #### Cross Site Attack Sctipting (XXS) 
 
+Input provided by one user is outputed by another user. Script in HTML Code, perform security checks and restrics data access to pages originating from the same site.
+
+#### Validating Input Syntax
+
+Compare against wanted string, compare input to dangerous values or accepting only know safe data.
+
+#### Alternate Encodings
+
+#### Input Fuzzing 
+
+Tetsing Technique for tetsing input to program.
+* Handle abnormal inputs
+* Template to genrate of know problems inputs
+
+#### Writing  Safe Program Code
+
+1. Correct algorithms implementation
+2. correct machine instruction for algorithm
+3. Valid manipulation of data
+
+#### Operating System Interaction
+
+1. Programs Execute under OS control(enviroment, variables. shares resource)
+2. System has concepts of multiple users(Lelvel Access, permission, shared,etc )
+
+**Enviroment Variable**: string value inherityed by each proccess.
+
+#### Vulnerable Compiled Programs
+
+* Vulnerable to PATH manupulation
+* Dynamically linked may be vulnerable to manupulation of PATH
+
+#### Preventing Race Conditions
+
+* Use Synchronization mechanism to lock the shared file.
+* `Lockfile` to cooperater in sharing a file
+
+## Operating System Security
+
 
