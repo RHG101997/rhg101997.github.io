@@ -716,4 +716,27 @@ Tetsing Technique for tetsing input to program.
 
 ## Operating System Security
 
+ASD = Australian Signals Directorate
+
+#### Strategies
+
+* Over **85%** of targeted cyber intrusion by ASD in 2009 could have been prevented.
+* Top 4 Strategy:
+1. White-list
+2. Patch third party app, and OP
+3. Restrict Administrative Priviliges  
+4. Create defense-in-depth system
+* Align with "20 Critical Controls" by DHS
+
+#### Operating System Security
+
+1. Risk and plan system deployment
+2. Secure OP and apps
+3. Critical content secured
+4. Appropiate Network protection mechanism
+5. Appropiate proccess are used to maintain security
+
+#### System Security Planning Proccess
+
+
 
