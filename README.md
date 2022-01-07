@@ -20,6 +20,17 @@ And then execute to install all the gems needed for the theme.:
 $ bundle
 ```
 
+To run the page using docker which is easier and requires less installation run the following in linux:
+
+```
+
+$ docker run -it --rm \
+    --volume="$PWD:/srv/jekyll" \
+    -p 4000:4000 jekyll/jekyll \
+    jekyll serve
+
+```
+
 ### Posts 
 
 Adding post will only need few steps for more information continue to the pre-made post by the creators of the them [Click Here](/_posts/2019-08-08-write-a-new-post.md)
