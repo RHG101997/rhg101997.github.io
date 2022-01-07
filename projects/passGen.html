@@ -7,7 +7,7 @@
 <style>
 p, h1, li, label, .masterbox {font-family: Helvetica, Arial, Verdana, Geneva, sans-serif; font-weight: normal; font-size: 100%;}
 h1{clear: both; font-size: 1.375em;}
-body{font-weight: normal; color: #000; background-color: #D1D1D1; margin: 15px;}
+body{font-weight: normal; color: rgb(233, 229, 229); background-color: #1b1b1e; margin: 15px;}
 form{left: 40px;margin: 0;}
 label{width: 100px;
  float: left;
@@ -17,10 +17,12 @@ label{width: 100px;
  display: block;}
 li{margin: 15px 0;}
 #mp {margin-left: 110px;}
-.masterbox {width: 285px; font-family: Verdana, Geneva, Helvetica, Sans-Serif; }
+.masterbox {width: 285px; font-family: Verdana, Geneva, Helvetica, Sans-Serif; border-radius: 20px; padding-left: 10px;}
 .websites {width: 405px; }
 .callout {width: 700px; }
-.sitebox {width: 90px; margin-bottom: 0.5px; padding-left: 4px;}
+.sitebox {width: 90px; margin-bottom: 0.5px; border-radius: 20px; padding-left: 10px;}
+.siteboxpass { margin-bottom: 0.5px; border-radius: 20px; padding-left: 10px;}
+.custom{ border-style: none; }
 .pass, .spell{
 position: relative; left: 15px; width: 166px; margin-bottom: 1.5px; 
 font-family: Menlo, "Bitstream Vera Sans", "Courier New", courier, monospace;
@@ -51,6 +53,55 @@ a:active{color: #00F;}
 
 .credits{
   font-size: 20%;
+}
+
+<!-- HTML !-->
+<button class="button-30" role="button">Button 30</button>
+
+/* CSS */
+.genbtn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.genbtn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.genbtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.genbtn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 </style>
@@ -353,22 +404,24 @@ window.onbeforeunload = function () {
   for (var i = 0; i < sites.length; i++) {
     document.write("<label><a href=\"" + sites[i].url + "\">" + sites[i].displayName + "</a></label>");
     document.writeln(" <input name=\"site\" class=\"sitebox\" value=\"" + sites[i].seed + "\" readonly=\"\">");
-    document.writeln("<input name=\"password\" id=\"" + sites[i].seed + "\" class=\"pass\" readonly=\"\" onclick=\"highlight(this);\" tabindex=\"6\" value=\"\"><br>");
+    document.writeln("<input name=\"password\" id=\"" + sites[i].seed + "\" class=\"siteboxpass\" readonly=\"\" onclick=\"highlight(this);\" tabindex=\"6\" value=\"\"><br>");
   }
 </script>
 
+<div class="custom">
+  </form ><br>
+  <!--custom-->
+  <form method="post" name="ot" class="callout" id="ot" autocapitalize="none" onsubmit="setvals();otpassword.value = b64_sha256(customRoot.value+&#39;:&#39;+ CustomSite.value).substr(0,20); if(customRoot.value.length==0 || customRoot.value==null){otpassword.value = &#39;&#39;}; document.ot.otpassword.focus(); document.ot.otpassword.select(); return false;">
+  <input name="passwd" id="customRoot" type="hidden" value="">
+  <label>Custom: </label> 
+  <input name="CustomSite" id="custid" class="sitebox" autocapitalize="none" onkeyup="otpassword.value = &#39;&#39;;" tabindex="3">
+  <input name="otpassword" id="otpass" class="siteboxpass" readonly onclick="highlight(this);" tabindex="5">
+  &nbsp;&nbsp;
+  <input type="submit" class="genbtn" value="Generate" tabindex="4">
+  <input type="button" class="genbtn" value="Clear All" onclick="window.location.href=window.location.href">
+  </form><br>
+</div>
 
-</form><br>
-<!--custom-->
-<form method="post" name="ot" class="callout" id="ot" autocapitalize="none" onsubmit="setvals();otpassword.value = b64_sha256(customRoot.value+&#39;:&#39;+ CustomSite.value).substr(0,20); if(customRoot.value.length==0 || customRoot.value==null){otpassword.value = &#39;&#39;}; document.ot.otpassword.focus(); document.ot.otpassword.select(); return false;">
-<input name="passwd" id="customRoot" type="hidden" value="">
-<label>Custom: </label> 
-<input name="CustomSite" id="custid" class="sitebox" autocapitalize="none" onkeyup="otpassword.value = &#39;&#39;;" tabindex="3">
-<input name="otpassword" id="otpass" class="pass" readonly onclick="highlight(this);" tabindex="5">
-&nbsp;&nbsp;
-<input type="submit" class="genbtn" value="Generate" tabindex="4">
-<input type="button" class="genbtn" value="Clear All" onclick="window.location.href=window.location.href">
-</form><br>
 
 
 
