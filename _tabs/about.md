@@ -1,16 +1,16 @@
 ---
-title: About
+title: About Me
 icon: fas fa-info
 order: 5
 ---
 
-Me
----
-My name is: **Richard Hernandez**
-Github: [https://github.com/RHG101997/](https://github.com/RHG101997/)
-
-Education
+Github
 ---------
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=rhg101997&show_icons=true&theme=github_dark)
+
+
+### Education
 
 ---
 
@@ -24,8 +24,7 @@ Education
 
     *Focus: Embedded Systems and Data System Software*
 
-Experience
-----------
+### Experience
 
 ---
 
@@ -44,8 +43,8 @@ Experience
 
 * **(2018-2020)** Retail for 2 years at EXPRESS STORE
 
-Technical Experience
---------------------
+### Technical Experience
+
 
 ---
 
@@ -70,8 +69,8 @@ Programming Languages
 [ref]: https://github.com/githubuser/superlongprojectname
 [py_scripts]: https://github.com/RHG101997/py_scripts
 
-Extra Section
-----------------------------------------
+### Extra Section
+
 
 ---
 
