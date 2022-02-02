@@ -1,0 +1,673 @@
+<!DOCTYPE html><html lang="en-US" mode="dark" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="Java Cheatsheets" /><meta name="author" content="Richard Hernandez" /><meta property="og:locale" content="en_US" /><meta name="description" content="This post is modified to fit my needs. The original source is in the following link" /><meta property="og:description" content="This post is modified to fit my needs. The original source is in the following link" /><link rel="canonical" href="/posts/java-cheatsheet/" /><meta property="og:url" content="/posts/java-cheatsheet/" /><meta property="og:site_name" content="Richard Hernandez" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2021-05-01T23:32:00-04:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Java Cheatsheets" /><meta name="twitter:site" content="@rhg101997" /><meta name="twitter:creator" content="@Richard Hernandez" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"author":{"@type":"Person","name":"Richard Hernandez"},"description":"This post is modified to fit my needs. The original source is in the following link","url":"/posts/java-cheatsheet/","@type":"BlogPosting","headline":"Java Cheatsheets","dateModified":"2021-08-28T17:38:46-04:00","datePublished":"2021-05-01T23:32:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java-cheatsheet/"},"@context":"https://schema.org"}</script><title>Java Cheatsheets | Richard Hernandez</title><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon.png"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon-precomposed.png"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/manifest.json"><meta name='msapplication-config' content='/assets/img/favicons/browserconfig.xml'><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="cdn.jsdelivr.net"><link rel="dns-prefetch" href="cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script defer src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id="></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ''); }); </script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="/assets/img/favicons/android-icon-192x192.png" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Richard Hernandez</a></div><div class="site-subtitle font-italic">Computer Engineer @ FIU</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="https://tools.richardhg.com/notes/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>NOTES</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/passwordgen/" class="nav-link"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>PASSWORD GEN.</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT ME</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center"> <a href="https://github.com/rhg101997" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github-alt"></i> </a> <a href="https://twitter.com/rhg101997" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['example','doamin.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <span id="mode-toggle-wrapper" class="order-1"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Posts </a> </span> <span>Java Cheatsheets</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Java Cheatsheets</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="semi-bold"> Richard Hernandez </span> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Sat, May 1, 2021, 11:32 PM -0400" prep="on" > May 1, 2021 <i class="unloaded">2021-05-01T23:32:00-04:00</i> </span></div><div> <span> <span class="timeago lastmod" data-toggle="tooltip" data-placement="bottom" title="Sat, Aug 28, 2021, 5:38 PM -0400" prefix="Updated " > Aug 28, 2021 <i class="unloaded">2021-08-28T17:38:46-04:00</i> </span> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="2336 words">12 min</span> <span id="pv" class="pageviews"><i class="fas fa-spinner fa-spin fa-fw"></i></span></div></div><div class="post-content"><blockquote><p>This post is modified to fit my needs. <strong>The original source is in the following <a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/java.md">link</a></strong></p></blockquote><ul><li><a href="#compilation--executing-java-code">COMPILATION &amp; EXECUTING JAVA CODE</a><li><a href="#data-types">DATA TYPES</a><li><a href="#declaration-and-assignment-statements">DECLARATION AND ASSIGNMENT STATEMENTS</a><li><a href="#comparison-operators">COMPARISON OPERATORS</a><li><a href="#printing">PRINTING</a><li><a href="#parsing-command-line-arguments">PARSING COMMAND-LINE ARGUMENTS</a></ul><h3 id="hello-world">HELLO WORLD</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="c1">//Text file name HelloWorld.java</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+  <span class="c1">// main() is the method</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span>
+    <span class="c1">//Prints "Hello World" in the terminal window.</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></table></code></div></div><h3 id="compilation--executing-java-code">COMPILATION &amp; EXECUTING JAVA CODE</h3><ul><li>Goto your program directory in terminal (Assumed JAVA Path is set)<li>After for compile your code</ul><blockquote><p><strong>javac HelloWorld.java (your program file name)</strong></p></blockquote><ul><li>For run program</ul><blockquote><p><strong>java HelloWorld (main class name)</strong></p></blockquote><h3 id="data-types">DATA TYPES</h3><div class="table-wrapper"><table><thead><tr><th style="text-align: center">Type<th style="text-align: center">Set of values<th style="text-align: center">Values<th style="text-align: center">Operators<tbody><tr><td style="text-align: center">int<td style="text-align: center">integers<td style="text-align: center">between -2^31 and + (2^31)-1<td style="text-align: center">+ - * / %<tr><td style="text-align: center">double<td style="text-align: center">floating-point numbers<td style="text-align: center">real numbers<td style="text-align: center">+ - * /<tr><td style="text-align: center">boolean<td style="text-align: center">boolean values<td style="text-align: center">true or false<td style="text-align: center">&amp;&amp; || !<tr><td style="text-align: center">char<td style="text-align: center">characters<td style="text-align: center"> <td style="text-align: center"> <tr><td style="text-align: center">String<td style="text-align: center">sequences of characters<td style="text-align: center"> <td style="text-align: center"> </table></div><h3 id="declaration-and-assignment-statements">DECLARATION AND ASSIGNMENT STATEMENTS</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="c1">//Declaration statement</span>
+<span class="kt">int</span> <span class="n">a</span><span class="o">,</span><span class="n">b</span><span class="o">;</span>
+
+<span class="c1">//Assignment statement</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">13212</span><span class="o">;</span> <span class="c1">//a is the variable name; 13212 is the literal which is assign to the variable a</span>
+
+<span class="c1">//Initialization statement</span>
+<span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+</pre></table></code></div></div><h3 id="comparison-operators">COMPARISON OPERATORS</h3><div class="table-wrapper"><table><thead><tr><th style="text-align: center">Operation<th style="text-align: center">Meaning<tbody><tr><td style="text-align: center">==<td style="text-align: center">equal<tr><td style="text-align: center">!=<td style="text-align: center">not equal<tr><td style="text-align: center">&lt;<td style="text-align: center">less than<tr><td style="text-align: center">&gt;<td style="text-align: center">greater than<tr><td style="text-align: center">&lt;=<td style="text-align: center">less than or equal<tr><td style="text-align: center">&gt;=<td style="text-align: center">greater than or equal</table></div><h3 id="printing">PRINTING</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Happy Coding Folks!!"</span>
+  <span class="kt">void</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="c1">//print s</span>
+  <span class="kt">void</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="c1">//print s, followed by a newline</span>
+  <span class="kt">void</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">()</span> <span class="c1">//print a newline</span>
+</pre></table></code></div></div><h3 id="parsing-command-line-arguments">PARSING COMMAND-LINE ARGUMENTS</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Java is the best!!"</span>
+  <span class="kt">int</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="c1">//convert s to an int value</span>
+  <span class="kt">double</span> <span class="nc">Double</span><span class="o">.</span><span class="na">parseDouble</span><span class="o">(</span><span class="nc">String</span><span class="o">)</span> <span class="c1">//convert s to a double value</span>
+  <span class="kt">long</span> <span class="nc">Long</span><span class="o">.</span><span class="na">parseLong</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="c1">// convert s to a long value</span>
+</pre></table></code></div></div><h3 id="math-library">MATH LIBRARY</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre><td class="rouge-code"><pre>  <span class="nc">Public</span> <span class="nc">Class</span> <span class="nc">Math</span><span class="o">{</span>
+    <span class="kt">double</span> <span class="nf">abs</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">)</span>    <span class="c1">// absolute value of a</span>
+    <span class="kt">double</span> <span class="nf">max</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">,</span> <span class="kt">double</span> <span class="n">b</span><span class="o">)</span>  <span class="c1">//maximum of a and b</span>
+    <span class="kt">double</span> <span class="nf">min</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">,</span> <span class="n">dobule</span> <span class="n">a</span><span class="o">)</span>  <span class="c1">//minimum of a and b</span>
+    <span class="kt">double</span> <span class="nf">sin</span><span class="o">(</span><span class="kt">double</span> <span class="n">theta</span><span class="o">)</span> <span class="c1">//sine of theta</span>
+    <span class="kt">double</span> <span class="nf">cos</span><span class="o">(</span><span class="kt">double</span> <span class="n">theta</span><span class="o">)</span> <span class="c1">//cosine of theta</span>
+    <span class="kt">double</span> <span class="nf">tan</span><span class="o">(</span><span class="kt">double</span> <span class="n">theta</span><span class="o">)</span> <span class="c1">//tangent of theta</span>
+    <span class="kt">double</span> <span class="nf">toRadians</span><span class="o">(</span><span class="kt">double</span> <span class="n">degrees</span><span class="o">)</span> <span class="c1">// convert angle from degrees to radians</span>
+    <span class="kt">double</span> <span class="nf">toDegrees</span><span class="o">(</span><span class="kt">double</span> <span class="n">radians</span><span class="o">)</span>  <span class="c1">// convert angle from radians to degrees</span>
+    <span class="kt">double</span> <span class="nf">exp</span><span class="o">(</span><span class="n">doube</span> <span class="n">a</span><span class="o">)</span>  <span class="c1">// exponential (e^a)</span>
+    <span class="kt">double</span> <span class="nf">pow</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">,</span> <span class="kt">double</span> <span class="n">p</span><span class="o">)</span> <span class="c1">//raise a to the bth power (a^b)</span>
+    <span class="kt">double</span> <span class="nf">random</span><span class="o">()</span> <span class="c1">//random in [0,1)</span>
+    <span class="kt">double</span> <span class="nf">sqrt</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">)</span>  <span class="c1">//square root of a</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><h3 id="examples-of-type-conversion">EXAMPLES OF TYPE CONVERSION</h3><div class="table-wrapper"><table><thead><tr><th style="text-align: center">Expression<th style="text-align: center">Expression type<th style="text-align: center">Expression value<tbody><tr><td style="text-align: center">(1 + 2 + 3 + 4) / 4.0<td style="text-align: center">double<td style="text-align: center">2.5<tr><td style="text-align: center">Math.sqrt(4)<td style="text-align: center">double<td style="text-align: center">2.0<tr><td style="text-align: center">“123343” + 99<td style="text-align: center">String<td style="text-align: center">“12334399”<tr><td style="text-align: center">11 * 0.25<td style="text-align: center">double<td style="text-align: center">2.75<tr><td style="text-align: center">(int) 11 * 0.25<td style="text-align: center">double<td style="text-align: center">2.75<tr><td style="text-align: center">11 * (int) 0.25<td style="text-align: center">int<td style="text-align: center">0<tr><td style="text-align: center">(int) (11 * 0.25)<td style="text-align: center">int<td style="text-align: center">2</table></div><h3 id="conditional--loop-statement">CONDITIONAL &amp; LOOP STATEMENT</h3><h4 id="anatomy-of-conditional-statement">ANATOMY OF CONDITIONAL STATEMENT</h4><blockquote><p>IF Statement</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="k">if</span> <span class="o">(</span><span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// x &gt; y is the boolean expression</span>
+   <span class="c1">//Sequence of statements</span>
+   <span class="n">x</span> <span class="o">=</span> <span class="n">y</span><span class="o">;</span>
+  <span class="o">}</span> 
+</pre></table></code></div></div></blockquote><blockquote><p>IF-ELSE STATEMENT</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>   <span class="k">if</span> <span class="o">(</span><span class="no">BOOLEAN</span> <span class="no">EXPRESSION</span><span class="o">)</span> <span class="o">{</span> 
+   <span class="c1">//Sequence of statements</span>
+   <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+   <span class="c1">//Sequence of statements</span>
+   <span class="o">}</span>
+</pre></table></code></div></div></blockquote><blockquote><p>NESTED IF STATEMENT</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>   <span class="k">if</span> <span class="o">(</span><span class="no">BOOLEAN</span> <span class="no">EXPRESSION</span><span class="o">)</span> <span class="o">{</span> 
+   <span class="c1">//Sequence of statements</span>
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">{</span>
+   <span class="c1">//Sequence of statements</span>
+   <span class="o">}</span>
+   <span class="o">.</span>
+   <span class="o">.</span>
+   <span class="o">.</span>
+   <span class="k">else</span> <span class="o">{</span>
+   <span class="c1">//Sequence of statements</span>
+   <span class="o">}</span>
+</pre></table></code></div></div></blockquote><blockquote><p>SWITCH STATEMENT</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>  <span class="k">switch</span> <span class="o">(</span><span class="no">VARIABLE</span> <span class="no">TO</span> <span class="no">EVALUATE</span> <span class="no">ITS</span> <span class="no">VALUE</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="nl">value:</span> <span class="nc">Statement</span><span class="o">;</span> <span class="k">break</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="o">...</span>
+    <span class="o">...</span>
+    <span class="k">default</span><span class="o">:</span> <span class="nc">Statement</span><span class="o">;</span> <span class="k">break</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><p><strong>Example:</strong></p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre><td class="rouge-code"><pre>  <span class="kt">int</span> <span class="n">month</span> <span class="o">=</span> <span class="mi">8</span><span class="o">;</span>
+        <span class="nc">String</span> <span class="n">monthString</span><span class="o">;</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="n">month</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"January"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"February"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"March"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"April"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">5</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"May"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">6</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"June"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">7</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"July"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">8</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"August"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">9</span><span class="o">:</span>  <span class="n">monthString</span> <span class="o">=</span> <span class="s">"September"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">10</span><span class="o">:</span> <span class="n">monthString</span> <span class="o">=</span> <span class="s">"October"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">11</span><span class="o">:</span> <span class="n">monthString</span> <span class="o">=</span> <span class="s">"November"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">12</span><span class="o">:</span> <span class="n">monthString</span> <span class="o">=</span> <span class="s">"December"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+            <span class="k">default</span><span class="o">:</span> <span class="n">monthString</span> <span class="o">=</span> <span class="s">"Invalid month"</span><span class="o">;</span>
+                     <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+</pre></table></code></div></div></blockquote><h4 id="anatomy-of-a-loop--statement">ANATOMY OF A LOOP STATEMENT</h4><blockquote><p>FOR LOOP STATEMENT</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="k">for</span> <span class="o">(</span><span class="n">declare</span> <span class="n">and</span> <span class="n">initialize</span> <span class="n">a</span> <span class="n">loop</span> <span class="n">control</span> <span class="n">variable</span><span class="o">;</span> <span class="n">loop</span><span class="o">-</span><span class="n">continuation</span> <span class="n">condition</span><span class="o">/</span><span class="n">s</span><span class="o">;</span> <span class="n">increment</span> <span class="n">or</span> <span class="n">decrement</span> <span class="n">of</span> <span class="n">the</span> <span class="n">variable</span> <span class="n">of</span> <span class="n">control</span><span class="o">)</span>
+  <span class="o">{</span>
+    <span class="c1">//Statement</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><p><strong>Example:</strong></p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+     <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><p>WHILE LOOP STATEMENT</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>    <span class="k">while</span><span class="o">(</span><span class="n">condition</span><span class="o">){</span>  <span class="c1">//till condition will be true.</span>
+    <span class="c1">//code to be executed </span>
+    <span class="o">}</span>
+</pre></table></code></div></div><p><strong>Example:</strong> ```java //Initialization is a separate statement int power = 1;</p></blockquote><p>while ( power &lt;= 10/2 ) // power &lt;= n/2 is an example of the loop-continuation condition { System.out.println(power); }</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>
+&gt; DO-WHILE LOOP STATEMENT
+
+```java
+  do{ //always run one time even if condition would be false
+    //Statement
+  } while(loop-continuation condition);
+</pre></table></code></div></div><p><strong>Example:</strong></p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>    <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span>  
+    <span class="k">do</span><span class="o">{</span>  
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>  
+      <span class="n">i</span><span class="o">++;</span>  
+    <span class="o">}</span><span class="k">while</span><span class="o">(</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">10</span><span class="o">);</span> 
+</pre></table></code></div></div><h3 id="array">ARRAY</h3><blockquote><p>ARRAY DECLARATION</p></blockquote><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>    <span class="kt">int</span><span class="o">[]</span>           <span class="n">ai</span><span class="o">;</span>        <span class="c1">// array of int</span>
+    <span class="kt">short</span><span class="o">[][]</span>       <span class="n">as</span><span class="o">;</span>        <span class="c1">// array of array of short</span>
+    <span class="kt">short</span>           <span class="n">s</span><span class="o">,</span>         <span class="c1">// scalar short</span>
+                    <span class="n">aas</span><span class="o">[][];</span>   <span class="c1">// array of array of short</span>
+    <span class="nc">Object</span><span class="o">[]</span>        <span class="n">ao</span><span class="o">;</span>        <span class="c1">// array of Object</span>
+    <span class="nc">Collection</span><span class="o">&lt;?&gt;[]</span> <span class="n">ca</span><span class="o">;</span>  <span class="c1">// array of Collection of unknown type</span>
+</pre></table></code></div></div><blockquote><p>DECLARATION OF ARRAY VARIABLE</p></blockquote><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>  <span class="nc">Exception</span> <span class="n">ae</span><span class="o">[]</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">Exception</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+  <span class="nc">Object</span> <span class="n">aao</span><span class="o">[][]</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">Exception</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">3</span><span class="o">];</span>
+  <span class="kt">int</span><span class="o">[]</span> <span class="n">factorial</span> <span class="o">=</span> <span class="o">{</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">24</span><span class="o">,</span> <span class="mi">120</span><span class="o">,</span> <span class="mi">720</span><span class="o">,</span> <span class="mi">5040</span> <span class="o">};</span>
+  <span class="kt">char</span> <span class="n">ac</span><span class="o">[]</span>       <span class="o">=</span> <span class="o">{</span> <span class="sc">'n'</span><span class="o">,</span> <span class="sc">'o'</span><span class="o">,</span> <span class="sc">'t'</span><span class="o">,</span> <span class="sc">' '</span><span class="o">,</span> <span class="sc">'a'</span><span class="o">,</span> <span class="sc">' '</span><span class="o">,</span>
+                      <span class="sc">'S'</span><span class="o">,</span> <span class="sc">'t'</span><span class="o">,</span> <span class="sc">'r'</span><span class="o">,</span> <span class="sc">'i'</span><span class="o">,</span> <span class="sc">'n'</span><span class="o">,</span> <span class="sc">'g'</span> <span class="o">};</span>
+  <span class="nc">String</span><span class="o">[]</span> <span class="n">aas</span>    <span class="o">=</span> <span class="o">{</span> <span class="s">"array"</span><span class="o">,</span> <span class="s">"of"</span><span class="o">,</span> <span class="s">"String"</span><span class="o">,</span> <span class="o">};</span>
+</pre></table></code></div></div><h3 id="access-modifiers">ACCESS MODIFIERS</h3><ol><li>defualt(No keyword required)<li>private<li>public<li>protected</ol><h3 id="non-access-modifiers">NON ACCESS MODIFIERS</h3><ol><li>static<li>final<li>transient<li>abstract<li>synchronized<li>volatile</ol><h2 id="object-oriented-programming-oops-concept">Object Oriented Programming (OOPs) Concept</h2><h3 id="object">OBJECT</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>  <span class="c1">//Declare a variable, object name</span>
+  <span class="nc">String</span> <span class="n">s</span><span class="o">;</span>
+
+  <span class="c1">//Invoke a contructor to create an object</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span> <span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+
+  <span class="c1">//Invoke an instance method that operates on the object's value</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">chartAt</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+</pre></table></code></div></div><blockquote><p>INSTANCE VARIABLES</p></blockquote><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Charge</span> <span class="o">{</span>
+    <span class="c1">//Instance variable declarations</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">double</span> <span class="n">rx</span><span class="o">,</span> <span class="n">ry</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">double</span> <span class="n">q</span><span class="o">;</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><h3 id="methods">METHODS</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">double</span> <span class="nf">sum</span> <span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//double is the return type, sum is the method's name, a and b are two arguments of type int;</span>
+    <span class="kt">int</span> <span class="n">result</span><span class="o">;</span> <span class="c1">//local variable</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">result</span><span class="o">;</span><span class="c1">//return statement;</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><h3 id="class-declaration">CLASS DECLARATION</h3><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+    <span class="c1">// field, constructor, and </span>
+    <span class="c1">// method declarations</span>
+<span class="o">}</span>
+</pre></table></code></div></div><p><strong>Example:</strong></p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bicycle</span> <span class="o">{</span>
+        <span class="c1">// the Bicycle class has</span>
+        <span class="c1">// three fields</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="n">cadence</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="n">gear</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="n">speed</span><span class="o">;</span>
+        <span class="c1">// the Bicycle class has</span>
+        <span class="c1">// one constructor</span>
+        <span class="kd">public</span> <span class="nf">Bicycle</span><span class="o">(</span><span class="kt">int</span> <span class="n">startCadence</span><span class="o">,</span> <span class="kt">int</span> <span class="n">startSpeed</span><span class="o">,</span> <span class="kt">int</span> <span class="n">startGear</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">gear</span> <span class="o">=</span> <span class="n">startGear</span><span class="o">;</span>
+            <span class="n">cadence</span> <span class="o">=</span> <span class="n">startCadence</span><span class="o">;</span>
+            <span class="n">speed</span> <span class="o">=</span> <span class="n">startSpeed</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="c1">// the Bicycle class has</span>
+        <span class="c1">// four methods</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setCadence</span><span class="o">(</span><span class="kt">int</span> <span class="n">newValue</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">cadence</span> <span class="o">=</span> <span class="n">newValue</span><span class="o">;</span>
+        <span class="o">}</span>   
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setGear</span><span class="o">(</span><span class="kt">int</span> <span class="n">newValue</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">gear</span> <span class="o">=</span> <span class="n">newValue</span><span class="o">;</span>
+        <span class="o">}</span>   
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">applyBrake</span><span class="o">(</span><span class="kt">int</span> <span class="n">decrement</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">speed</span> <span class="o">-=</span> <span class="n">decrement</span><span class="o">;</span>
+        <span class="o">}</span>  
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speedUp</span><span class="o">(</span><span class="kt">int</span> <span class="n">increment</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">speed</span> <span class="o">+=</span> <span class="n">increment</span><span class="o">;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><blockquote><p>DECLARING CLASSESS IMPLEMENTATING AN INTERFACE AND EXTENDING PARENT CLASS</p><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="kd">class</span> <span class="nc">MyClass</span> <span class="kd">extends</span> <span class="nc">MySuperClass</span> <span class="kd">implements</span> <span class="nc">YourInterface</span> <span class="o">{</span>
+    <span class="c1">// field, constructor, and</span>
+    <span class="c1">// method declarations</span>
+<span class="o">}</span>
+</pre></table></code></div></div><ul><li>MyClass is a subclass of MySuperClass and that it implements the YourInterface interface.</ul></blockquote><blockquote><p>CONSTRUCTORS</p><ul><li>A class contains constructors that are invoked to create objects from the class blueprint.<li>Constructor declarations look like method declarations—except that they use the name of the class and have no return type<li>Each and every class has defualt No-args constructor.</ul></blockquote><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bicycle</span><span class="o">{</span>
+      
+      <span class="kd">private</span> <span class="kt">int</span> <span class="n">gear</span><span class="o">;</span>
+      <span class="kd">private</span> <span class="kt">int</span> <span class="n">cadence</span><span class="o">;</span>
+      <span class="kd">private</span> <span class="kt">int</span> <span class="n">speed</span><span class="o">;</span>
+     
+      <span class="kd">public</span> <span class="nf">Bicycle</span><span class="o">(</span><span class="kt">int</span> <span class="n">startCadence</span><span class="o">,</span> <span class="kt">int</span> <span class="n">startSpeed</span><span class="o">,</span> <span class="kt">int</span> <span class="n">startGear</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//args-constructor</span>
+        <span class="n">gear</span> <span class="o">=</span> <span class="n">startGear</span><span class="o">;</span>
+        <span class="n">cadence</span> <span class="o">=</span> <span class="n">startCadence</span><span class="o">;</span>
+        <span class="n">speed</span> <span class="o">=</span> <span class="n">startSpeed</span><span class="o">;</span>
+      <span class="o">}</span>
+
+      <span class="kd">public</span> <span class="nf">Bicycle</span><span class="o">(){</span><span class="c1">//No-args constructor</span>
+        <span class="kd">super</span><span class="o">();</span>
+      <span class="o">}</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><h3 id="polymorphism">POLYMORPHISM</h3><ul><li>Polymorphism is the concept where an object behaves differently in different situations.<li>There are two types of polymorphism<ol><li>compile time polymorphism<li>runtime polymorphism.</ol></ul><h4 id="1-compile-time-polymorphism">1. Compile Time Polymorphism</h4><ul><li>Compile-time polymorphism is achieved by method overloading.<li>method overloading is creating multiple method with methods name is same and arguments are different.<div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="o">{</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">(){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drwaing circle with default color Black and diameter 1 cm."</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">int</span> <span class="n">diameter</span><span class="o">){</span> <span class="c1">//method draw() overloaded.</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drwaing circle with default color Black and diameter"</span><span class="o">+</span><span class="n">diameter</span><span class="o">+</span><span class="s">" cm."</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">int</span> <span class="n">diameter</span><span class="o">,</span> <span class="nc">String</span> <span class="n">color</span><span class="o">){</span> <span class="c1">//method draw() overloaded.</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drwaing circle with color"</span><span class="o">+</span><span class="n">color</span><span class="o">+</span><span class="s">" and diameter"</span><span class="o">+</span><span class="n">diameter</span><span class="o">+</span><span class="s">" cm."</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></table></code></div></div><h4 id="2-run-time-polymorphism">2. Run Time Polymorphism</h4><li>Run-time polymorphism is achieved by method overriding.<li>Runtime polymorphism is implemented when we have an <strong>“IS-A”</strong> relationship between objects.<li>method overriding is the subclass has to override the superclass method.<div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Shape</span> <span class="o">{</span>
+
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">();</span>
+  <span class="o">}</span>
+</pre></table></code></div></div><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">implements</span> <span class="nc">Shape</span><span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">(){</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drwaing circle"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+  <span class="o">}</span>
+</pre></table></code></div></div><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Square</span> <span class="kd">implements</span> <span class="nc">Shape</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drawing Square"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+  <span class="o">}</span>
+</pre></table></code></div></div><li><code class="language-plaintext highlighter-rouge">Shape</code> is the superclass and there are two subclasses <code class="language-plaintext highlighter-rouge">Circle</code> and <code class="language-plaintext highlighter-rouge">Square</code><li>Below is an example of runtime polymorphism.<div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>  <span class="nc">Shape</span> <span class="n">sh</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Circle</span><span class="o">();</span>
+  <span class="n">sh</span><span class="o">.</span><span class="na">draw</span><span class="o">();</span>
+
+  <span class="nc">Shape</span> <span class="n">sh1</span> <span class="o">=</span> <span class="n">getShape</span><span class="o">();</span> <span class="c1">//some third party logic to determine shape</span>
+  <span class="n">sh1</span><span class="o">.</span><span class="na">draw</span><span class="o">();</span>
+</pre></table></code></div></div></ul><h3 id="inheritance">INHERITANCE</h3><ul><li>Inheritance is the mechanism of code reuse.<li>The object that is getting inherited is called the superclass and the object that inherits the superclass is called a subclass.<li>We use <code class="language-plaintext highlighter-rouge">extends</code> keyword in java to implement inheritance from class.<li>We use <code class="language-plaintext highlighter-rouge">implements</code> keyword in java to implement inheritance from interface.</ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Superclass</span><span class="o">{</span>
+      <span class="c1">// methods and fields</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Superinterface</span><span class="o">{</span>
+      <span class="c1">// methods and fields</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Subclass</span> <span class="kd">extends</span> <span class="nc">Superclass</span> <span class="kd">implements</span> <span class="nc">Superinterface</span><span class="o">{</span>
+      <span class="c1">// methods and fields</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><h3 id="abstraction">Abstraction</h3><ul><li>Abstraction is the concept of hiding the internal details and describing things in simple terms.<li>Abstraction can be achieved by two ways.<ol><li>Abstract Class<li>Interface</ol></ul><h4 id="1-abstract-class">1. Abstract Class</h4><ul><li>An abstract class must be declared with an <code class="language-plaintext highlighter-rouge">abstract</code> keyword.<li>It can have abstract and non-abstract methods.<li>It cannot be instantiated.<li>It can have constructors and static methods also.<li>It can have final methods which will force the subclass not to change the body of the method.</ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>    <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Flower</span><span class="o">{</span>
+        <span class="kd">abstract</span> <span class="nc">String</span> <span class="nf">Smell</span><span class="o">();</span> <span class="c1">//abstract method.</span>
+        <span class="nc">String</span> <span class="nf">Oil</span><span class="o">(){</span>  <span class="c1">// non-abstract method. </span>
+           <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Flower Oil is good."</span><span class="o">);</span>
+         <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lily</span> <span class="kd">extends</span> <span class="nc">Flower</span><span class="o">{</span>
+        <span class="kd">private</span> <span class="nc">String</span> <span class="nf">Smell</span><span class="o">(){</span> <span class="c1">// implementation of abstarct method.</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Lily smell's lovender."</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><h4 id="2-interface">2. Interface</h4><ul><li>Interface is a blueprint of a <strong>class</strong>.<li>It can have only abstract methods. [Except Java 8 and next versions.]<li>Since Java 8, we can have <strong>default and static</strong> methods in an interface.</ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>    <span class="kd">interface</span> <span class="nc">print</span><span class="o">{</span>  
+        <span class="kt">void</span> <span class="nf">printPaper</span><span class="o">();</span>  
+    <span class="o">}</span>  
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">A4</span> <span class="kd">implements</span> <span class="n">print</span><span class="o">{</span>  
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printPaper</span><span class="o">(){</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"A4 Page Printed. "</span><span class="o">);</span>
+        <span class="o">}</span>  
+    <span class="o">}</span>
+</pre></table></code></div></div><h3 id="encapsulation">Encapsulation</h3><ul><li>Encapsulation is used for access restriction to class members and methods.<li>Encapsulation is the technique used to implement abstraction in OOP.<li>As in encapsulation, the data in a class is hidden from other classes, so it is also known as <strong>data-hiding</strong>.<li>Encapsulation can be achieved by Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.<li>Best example of Encapsulation is POJO (Plain-Java-Object-Class).</ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="nc">String</span> <span class="n">username</span><span class="o">;</span>
+        <span class="kd">private</span> <span class="nc">String</span> <span class="n">password</span><span class="o">;</span>
+
+        <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getUsername</span><span class="o">()</span> <span class="o">{</span>
+          <span class="k">return</span> <span class="n">username</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setUsername</span><span class="o">(</span><span class="nc">String</span> <span class="n">username</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">this</span><span class="o">.</span><span class="na">username</span> <span class="o">=</span> <span class="n">username</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getPassword</span><span class="o">()</span> <span class="o">{</span>
+          <span class="k">return</span> <span class="n">password</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPassword</span><span class="o">(</span><span class="nc">String</span> <span class="n">password</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">this</span><span class="o">.</span><span class="na">password</span> <span class="o">=</span> <span class="n">password</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</pre></table></code></div></div><h2 id="advance-data-type">ADVANCE DATA TYPE</h2><ul><li><strong>STACK DATA TYPE</strong></ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span> <span class="kd">implements</span> <span class="nc">Iterable</span> <span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span>
+
+  <span class="nf">Stack</span><span class="o">()</span>   <span class="c1">//create an empty stack</span>
+  <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="c1">//return if the stack empty</span>
+  <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="nc">Item</span> <span class="n">item</span><span class="o">)</span> <span class="c1">// push an item onto the stack</span>
+  <span class="nc">Item</span> <span class="nf">pop</span><span class="o">()</span> <span class="c1">//return and remove the item that was inserted most recently</span>
+  <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="c1">//number of item on stack</span>
+</pre></table></code></div></div><ul><li><strong>QUEUE DATA TYPE</strong></ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span> <span class="kd">implements</span> <span class="nc">Iterable</span><span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span>
+
+  <span class="nf">Queue</span><span class="o">()</span>  <span class="c1">//create an emptyh queue</span>
+  <span class="kt">boolean</span> <span class="nf">isEmpthy</span><span class="o">()</span>  <span class="c1">//return if the queue empthy</span>
+  <span class="kt">void</span> <span class="nf">enqueue</span><span class="o">(</span><span class="nc">Item</span> <span class="n">item</span><span class="o">)</span> <span class="c1">// insert an item onto queue</span>
+  <span class="nc">Item</span> <span class="nf">dequeue</span><span class="o">()</span>  <span class="c1">//return and remove the item that was inserted least recently</span>
+  <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="c1">//number of item on queue</span>
+</pre></table></code></div></div><ul><li><strong>ITERABLE</strong></ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre><span class="c1">//import Iterator</span>
+<span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span> <span class="kd">implements</span> <span class="nc">Iterable</span> <span class="o">&lt;</span><span class="nc">Item</span><span class="o">&gt;</span> <span class="o">{</span> 
+
+<span class="c1">//FIFO queue</span>
+  <span class="kd">private</span> <span class="nc">Node</span> <span class="n">first</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="nc">Node</span> <span class="n">last</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Node</span> <span class="o">{</span>
+    <span class="nc">Item</span> <span class="n">item</span><span class="o">;</span>
+    <span class="nc">Node</span> <span class="n">next</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">enqueue</span> <span class="o">(</span><span class="nc">Item</span> <span class="n">item</span><span class="o">)</span>
+  <span class="o">...</span>
+
+  <span class="kd">public</span> <span class="nc">Item</span> <span class="nf">dequeue</span><span class="o">()</span>
+  <span class="o">...</span>
+
+<span class="o">}</span>
+</pre></table></code></div></div><ul><li><strong>SYMBOL TABLE DATA TYPE</strong></ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ST</span><span class="o">&lt;</span><span class="nc">Key</span> <span class="kd">extends</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="nc">Key</span><span class="o">&gt;,</span> <span class="nc">Value</span><span class="o">&gt;</span>
+
+  <span class="nf">ST</span><span class="o">()</span>  <span class="c1">//create and empty symbol table</span>
+  <span class="kt">void</span> <span class="nf">put</span><span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">,</span> <span class="nc">Value</span> <span class="n">val</span><span class="o">)</span>  <span class="c1">//associate val with key</span>
+  <span class="nc">Value</span> <span class="nf">get</span><span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span>  <span class="c1">//value associated with key</span>
+  <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span> <span class="c1">//remove key (and its associated value)</span>
+  <span class="kt">boolean</span> <span class="nf">contains</span> <span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span>  <span class="c1">//return if there is a value associated with key</span>
+  <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span>  <span class="c1">//number of key-value pairs</span>
+  <span class="nc">Iterable</span><span class="o">&lt;</span><span class="nc">Key</span><span class="o">&gt;</span> <span class="nf">keys</span><span class="o">()</span>  <span class="c1">// all keys in the symbol table</span>
+</pre></table></code></div></div><ul><li><strong>SET DATA TYPE</strong></ul><div class="language-java highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SET</span><span class="o">&lt;</span><span class="nc">Key</span> <span class="kd">extends</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="nc">Key</span><span class="o">&gt;&gt;</span> <span class="kd">implements</span> <span class="nc">Iterable</span><span class="o">&lt;</span><span class="nc">Key</span><span class="o">&gt;</span>
+  <span class="nf">SET</span><span class="o">()</span> <span class="c1">//create an empthy set</span>
+  <span class="kt">boolean</span> <span class="nf">isEmpthy</span><span class="o">()</span>  <span class="c1">//return if the set is empthy</span>
+  <span class="kt">void</span> <span class="nf">add</span> <span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span>  <span class="c1">//add key to the set</span>
+  <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span>  <span class="c1">//remove key from set</span>
+  <span class="kt">boolean</span> <span class="nf">contains</span><span class="o">(</span><span class="nc">Key</span> <span class="n">key</span><span class="o">)</span> <span class="c1">//return if the key is in the set</span>
+  <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="c1">//number of elements in set</span>
+</pre></table></code></div></div></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/notes/'>Notes</a>, <a href='/categories/java/'>Java</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/java/" class="post-tag no-text-decoration" >java</a> <a href="/tags/oop/" class="post-tag no-text-decoration" >OOP</a> <a href="/tags/polymorphism/" class="post-tag no-text-decoration" >polymorphism</a> <a href="/tags/cheatsheet/" class="post-tag no-text-decoration" >cheatsheet</a> <a href="/tags/inheritance/" class="post-tag no-text-decoration" >inheritance</a> <a href="/tags/proggramming/" class="post-tag no-text-decoration" >proggramming</a> <a href="/tags/loops/" class="post-tag no-text-decoration" >loops</a> <a href="/tags/operators/" class="post-tag no-text-decoration" >operators</a> <a href="/tags/basics/" class="post-tag no-text-decoration" >basics</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Java Cheatsheets - Richard Hernandez&url=/posts/java-cheatsheet/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Java Cheatsheets - Richard Hernandez&u=/posts/java-cheatsheet/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=Java Cheatsheets - Richard Hernandez&url=/posts/java-cheatsheet/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="Copy link"></i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/docker-essentials/">Docker Essentials</a><li><a href="/posts/C++-const-keyword/">C++ Const Keyword</a><li><a href="/posts/C++-Streams/">C++ Streams</a><li><a href="/posts/p5-art/">Some other P5 Projects</a><li><a href="/posts/terraingen-v2/">Terrain Generator using Perlin Noise</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/tags/advance/">Advance</a> <a class="post-tag" href="/tags/c/">C++</a> <a class="post-tag" href="/tags/functions/">functions</a> <a class="post-tag" href="/tags/proggramming/">Proggramming</a> <a class="post-tag" href="/tags/declarations/">declarations</a> <a class="post-tag" href="/tags/images/">images</a> <a class="post-tag" href="/tags/js/">js</a> <a class="post-tag" href="/tags/methods/">methods</a> <a class="post-tag" href="/tags/noise/">noise</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/python-libraries/"><div class="card-body"> <span class="timeago small" > Apr 25, 2021 <i class="unloaded">2021-04-25T00:00:00-04:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Python Libraries</h3><div class="text-muted small"><p> Libraries: Progress_Bar, Plot, Table, Curses, Logging, Scraping, Web, Profile, NumPy, Image, Audio, Games, Data. This post is modified to fit my needs. The original source is in the following...</p></div></div></a></div><div class="card"> <a href="/posts/docker-essentials/"><div class="card-body"> <span class="timeago small" > May 1, 2021 <i class="unloaded">2021-05-01T23:32:00-04:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker Essentials</h3><div class="text-muted small"><p> This post is modified to fit my needs. The original source is in the following link Using GCR from gcloud for private images #################################################################...</p></div></div></a></div><div class="card"> <a href="/posts/bash-common-commands-cheatsheet/"><div class="card-body"> <span class="timeago small" > Apr 19, 2021 <i class="unloaded">2021-04-19T00:00:00-04:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Bash Common Commands</h3><div class="text-muted small"><p> Files list files ls list all files ls -la create file touch &lt;file_name&gt; rename file mv &lt;file_name&gt; &lt;new_file_name&gt; copy file cp &lt;file_name&gt; &lt;file_name&gt; delete fi...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/docker-essentials/" class="btn btn-outline-primary" prompt="Older"><p>Docker Essentials</p></a> <a href="/posts/p5-art/" class="btn btn-outline-primary" prompt="Newer"><p>Some other P5 Projects</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2022 <a href="https://twitter.com/rhg101997">Richard Hernandez</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/tags/advance/">Advance</a> <a class="post-tag" href="/tags/c/">C++</a> <a class="post-tag" href="/tags/functions/">functions</a> <a class="post-tag" href="/tags/proggramming/">Proggramming</a> <a class="post-tag" href="/tags/declarations/">declarations</a> <a class="post-tag" href="/tags/images/">images</a> <a class="post-tag" href="/tags/js/">js</a> <a class="post-tag" href="/tags/methods/">methods</a> <a class="post-tag" href="/tags/noise/">noise</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script>
