@@ -37,12 +37,12 @@
         </a>
       </li>
       <!-- Notes tab (Link hard coded since is not internal)-->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a href="https://tools.richardhg.com/notes/" class="nav-link">
           <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
           <span>{{ "NOTES" }}</span>
         </a>
-      </li>
+      </li> -->
       <!-- the real tabs -->
       {% for tab in site.tabs %}
       <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
