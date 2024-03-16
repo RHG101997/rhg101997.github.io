@@ -1,5 +1,5 @@
 ---
-title: Note-Taking Worflow as PhD Student
+title: Note-Taking Workflow as PhD Student
 author: Richard Hernandez
 date: 2024-03-15 14:10:00 +0800
 categories: [Notes, Obsidian]
