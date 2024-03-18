@@ -1,4 +1,5 @@
 ---
+title: Robust and Privacy-preserving Federated Learning through Secure Multiparty Computation
 author: Richard Hernandez
 date: '2024-03-18 14:10:00 +0800'
 categories:
@@ -11,7 +12,7 @@ tags:
   - privacy
   - security
 image:
-  path: 'https://adwise.fiu.edu/wp-content/uploads/RichardHernandez_MPC_FL.png'
+  path: ../assets/img/RichardHernandez_MPC_FL.png
   alt: Other works vs mine
 ---
 ## Robust and Privacy-preserving Federated Learning through Secure Multiparty Computation
