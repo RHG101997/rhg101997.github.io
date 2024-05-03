@@ -72,11 +72,6 @@ _Cybercorps SFS_
 * CompTIA Security+ ce Certification
 
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="de25144d-9c0d-48a3-8d7b-40fd35148567" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="dd028720-c8bc-4a81-82d4-4f2a1102ade3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-
 ## Github
 
 ----
