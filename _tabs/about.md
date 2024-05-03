@@ -4,79 +4,89 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Github
----------
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=rhg101997&show_icons=true&theme=github_dark)
+## **Education**
 
 
-### Education
 
----
-
-2021-2024 (expected)
+2021- Summer 2025 (expected)
 :   **PhD, Computer Engineering**; Florida International University(FIU)
 
-    *Thesis title: Secure Multiparty Computation using Blockchain Technologies*
+    *Dissertation title: Secure Multiparty Computation using Blockchain Technologies*
 
 2017-2020
 :   **BS, Computer Engineering**; Florida International University(FIU)
 
     *Focus: Embedded Systems and Data System Software*
 
-### Experience
-
----
-
-**My Most Recent Work Experience:**
-
-**(2021 - current)** I am a Research Assistant at Florida International University working in serveral topics for the Advanced Wireless and Security Lab (ADWISE):
-
-* Working with a Multiparty Computation framwork called [MP-SPDZ](https://github.com/data61/MP-SPDZ)
-
-* Also doing research in Blockhain technologies mainly [Algorand](https://www.algorand.com/futurefi/) and how to apply them to MPC
-
-* Several other Communication technologies are been used as part of research, and linux systems.
+## **Experience**
 
 
-**That Other Jobs**
-
-* **(2018-2020)** Retail for 2 years at EXPRESS STORE
-
-### Technical Experience
 
 
----
+![fiuece](https://cec.fiu.edu/logo.png){:width="300" .w-50 .right}
 
-My Cool Side Project
-:   Her are some projects I have worked on in my spare time, and other resources.
+**(2021 - current) I am a Research Assistant at Florida International University working in serveral topics for the Advanced Wireless and Security Lab (ADWISE):**
 
-    * [Nim_Game_Java](https://github.com/RHG101997/Nim_Game_Java) for better review here is a video about it (here)[https://youtu.be/EwzbEp6SbEM]
-    * cLog: Command line coloring using python. [video](https://www.youtube.com/watch?v=_gx3Dt7MoK0&ab_channel=RichardHernandez)
-    * Tile based Terrain using P5.js for rendering. The porject is aviable in this website, or here is a [video](https://youtu.be/l4nAdEntGf8) about the not updated version. [Code Here](https://editor.p5js.org/RHG101997/sketches/6IdZG40H0)
-    * SynthesisOfSinusoidalSignals: It is a project for creating sound in matlab using frequencies. I did a small paper about found in [Here](https://github.com/RHG101997/SynthesisOfSinusoidalSignals).
+* Multiparty Computation framework called [MP-SPDZ](https://github.com/data61/MP-SPDZ)
+* Federate Learning
+* Research in Blockhain technologies mainly [Algorand](https://www.algorand.com/futurefi/) and how to apply them to MPC
 
 
-Programming Languages
-:   **C++:** First language I learned to use in high school, it was called to my attention due to the desire of creating games. Later on I found it to be almost every where in computer science and in engineering.
+![fiuece](https://www.afrl.af.mil/Portals/90/AFRL%20Logo_BLUE_website_2in.png?ver=SjCg5emtB04mu9Y7nEMlKA%3D%3D
+){:width="300" .w-50 .right}
 
-:   **Python:** Most of my classes at university some how reference this language and it is really good for creating prototypes and make fast servers or networking. I created a list with most of my scripts used from gaming to file manipulation found here in [py_scripts].
+**(2022, 2023, 2024) Intern for Air Force Research Lab (AFRL)**
 
-:   **Java:** This language was used my some of my algorithm classes in University, and most of the advance concepts in OOP I learned using Java.
-
-:   Basic knowledge of **C**, **golang**, others.
-
-[ref]: https://github.com/githubuser/superlongprojectname
-[py_scripts]: https://github.com/RHG101997/py_scripts
-
-### Extra Section
+* Working on Multiparty Computation and Machine Learning
 
 
----
 
-* Human Languages:
+## **Publication:**
 
-     * Spanish (native speaker)
-     * English (fluent)
+* **SPIE Conference 2024:** Security Games with Malicious Adversaries in The Clouds
+* **LCN 2023 Short Paper:** Outsourcing Privacy-Preserving Federated Learning on Malicious Networks through MPC
+* **ICC 2024 Paper:** Optimizing the Parameters of Pipelined Multi-party Computation for Privacy-Preserving Machine Learning Applications
+* **SMARTCOMP 2024:** Cost-based Modeling and Optimization of Secure Matrix Multiplication in the Cloud
+
+
+## **Technical Experience**
+
+
+**Skills:**
+
+* Programming: C++, C , Python, Web Development {HTML, CSS, JavaScript} , Java
+* Researching: Multiparty Computation (MPC), Machine Learning, Networking, Cybersecurity
+* Professional Softwares: Version Control (Github),Anaconda, Docker , Jupyter-Notebooks, VS Code , Linux, Windows, Matlab, Tensorflow
+* Other Skills: Embedded Systems, Office, LaTeX, Scripting (Bash), Cloud Computing (GCP, AWS )
+* Languages: English, Spanish (Native)
+
+**Scholarships:**
+
+![scholarship](https://www.bowiestate.edu/admissions-and-aid/images/nsf-cybercorps-logo.jpg){: width="400"}
+_Cybercorps SFS_
+
+
+**Certifications:**
+* Microsoft Certified: Azure AI Fundamentals
+* CompTIA Security+ ce Certification
+
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="de25144d-9c0d-48a3-8d7b-40fd35148567" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="dd028720-c8bc-4a81-82d4-4f2a1102ade3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+## Github
+
+----
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=rhg101997&show_icons=true&theme=github_dark&hide_rank=true){: .left}
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rhg101997&size_weight=0.5&count_weight=0.5&theme=github_dark){: .left}
+
+
+
+
 
 
