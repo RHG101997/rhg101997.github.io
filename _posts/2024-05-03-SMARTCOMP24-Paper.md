@@ -8,9 +8,10 @@ categories:
 tags:
   - research
   - multiparty computation
-  - federate learning
+  - matrix multiplication
   - privacy
   - security
+  - SMARTCOMP24
 image:
   path: ../assets/img/strassen.png
   alt: Other works vs mine
